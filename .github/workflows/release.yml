@@ -51,7 +51,7 @@ jobs:
           items+=('{"build": "macos", "os": "macos-latest", "arch": "x86_64"}')
           items+=('{"build": "windows", "os": "windows-latest", "arch": "x86_64"}')
 
-          https://docs.github.com/zh/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners
+          # https://docs.github.com/zh/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners
           self-hosted runner
           if [[ -n "${{ vars.SELF_HOSTED_MACOS_ARM64_RUNNER }}" ]]; then
             # setup-python没有aarch64的python3.9，这里指定python3.10
